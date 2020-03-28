@@ -1,45 +1,45 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { Link, graphql, StaticQuery } from 'gatsby'
+import '../css/worklist.css'
 
-class BlogRoll extends React.Component {
+class WorkList extends React.Component {
   render() {
     const { data } = this.props;
     const { edges: posts } = data.allMarkdownRemark;
 
     return (
+      <div id="workWrap">
+      <p id="selectedWork">Selected Work:</p>
       <div className="columns is-multiline">
         {posts &&
           posts.map(({ node: post }) => (
             <div className="is-parent column is-6" key={post.id}>
-              <article
-                className={`blog-list-item tile is-child box notification ${
-                  post.frontmatter.featuredpost ? 'is-featured' : ''
-                }`}
-              >
+              <article>
                 <header>
-                  <p className="post-meta">
+                  <p id="postTitle" className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.frontmatter.path}
                     >
                       {post.frontmatter.title}
-                    </Link>
-                    <span> &bull; </span>
+                    <span> — </span>
                     <span className="subtitle is-size-5 is-block">
                       {post.frontmatter.date}
                     </span>
+                    </Link>
                   </p>
                 </header>
               </article>
             </div>
           ))}
       </div>
+      </div>
     )
   }
 }
 
-BlogRoll.propTypes = {
+WorkList.propTypes = {
   data: PropTypes.shape({
     allMarkdownRemark: PropTypes.shape({
       edges: PropTypes.array,
@@ -50,7 +50,7 @@ BlogRoll.propTypes = {
 export default () => (
   <StaticQuery
     query={graphql`
-      query BlogRollQuery {
+      query WorkListQuery {
         allMarkdownRemark(
           sort: { order: DESC, fields: [frontmatter___date] }
         ) {
@@ -61,13 +61,13 @@ export default () => (
               frontmatter {
                 path
                 title
-                date(formatString: "MMMM DD, YYYY")
+                date(formatString: "YYYY")
               }
             }
           }
         }
       }
     `}
-    render={(data, count) => <BlogRoll data={data} count={count} />}
+    render={(data, count) => <WorkList data={data} count={count} />}
   />
 )

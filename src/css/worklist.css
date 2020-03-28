@@ -1,7 +1,10 @@
 * {
     margin: 0;
     padding: 0;}
-#headerWrap {
+a {
+    text-decoration: inherit;
+    color: inherit;}
+#workWrap {
     position: relative;
     background-color: white;
     top: 0;
@@ -15,21 +18,20 @@
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */}
-#nameTitle {
-    position: relative;
-    top: 50%;
-    transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);
-    float: left;}
+#selectedWork {
+    color: grey;}
+#postTitle {
+    color: grey}
 #addtlInfo {
     position: relative;
     top: 50%;
     transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);
     float: right;
-    color: blue}
+    color: rgb(125, 160, 255)}
 
 @media (min-aspect-ratio: 1/1) {
 
-    #headerWrap {
+    #workWrap {
         font-size: 2vw;
         padding-left: 1.5%;
         padding-right: 1.5%;}

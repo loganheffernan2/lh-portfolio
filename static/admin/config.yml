@@ -16,3 +16,4 @@ collections:
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
       - { name: addt, label: Addt'l, widget: markdown }
+      - { label: "Image", name: "thumbnail", widget: "image"}

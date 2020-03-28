@@ -1,5 +1,5 @@
 import React from 'react'
-import BlogRoll from '../components/BlogRoll'
+import WorkList from '../components/WorkList'
 import Header from '../components/Header'
 
 export default () => {
@@ -9,7 +9,7 @@ export default () => {
             <Header />
           </div>
       <div className="content">
-            <BlogRoll />
+            <WorkList />
           </div>
     </>)
 }
