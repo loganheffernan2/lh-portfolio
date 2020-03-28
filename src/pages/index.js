@@ -1,10 +1,15 @@
 import React from 'react'
-import { Link } from 'gatsby'
+import BlogRoll from '../components/BlogRoll'
+import Header from '../components/Header'
 
 export default () => {
   return (
     <>
-      Hello world!
-      <p><Link to="/blog">View Blog</Link></p>
+      <div className="content">
+            <Header />
+          </div>
+      <div className="content">
+            <BlogRoll />
+          </div>
     </>)
 }

@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;}
+#headerWrap {
+    position: relative;
+    background-color: white;
+    top: 0;
+    width: 100%;
+    max-width: 100%;
+    height: 7.5vh;
+    font-family: sans-serif;
+    font-size: 5vw;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box; /* Firefox */
+    -webkit-box-sizing:border-box; /* Safari */}
+#nameTitle {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);
+    float: left;}
+#addtlInfo {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);-ms-transform: translateY(-50%);-webkit-transform: translateY(-50%);
+    float: right;}
+
+@media (min-aspect-ratio: 1/1) {
+
+    #headerWrap {
+        font-size: 2vw;
+        padding-left: 1.5%;
+        padding-right: 1.5%;}
+}
