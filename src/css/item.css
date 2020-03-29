@@ -1,12 +1,7 @@
 * {
     margin: 0;
     padding: 0;}
-a {
-    text-decoration: inherit;
-    color: inherit;}
-a:hover {
-    color: blue;}
-#workWrap {
+#blogWrap {
     position: relative;
     background-color: white;
     top: 0;
@@ -20,14 +15,13 @@ a:hover {
     box-sizing:border-box;
     -moz-box-sizing:border-box; /* Firefox */
     -webkit-box-sizing:border-box; /* Safari */}
-#selectedWork {
-    color: grey;}
-#postTitle {
-    color: grey}
+    #blogWrap p {
+        color: gray;}
 
+    
 @media (min-aspect-ratio: 1/1) {
 
-    #workWrap {
+    #blogWrap {
         font-size: 2vw;
         padding-left: 1.5%;
         padding-right: 1.5%;}
