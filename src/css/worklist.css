@@ -22,7 +22,7 @@ a:hover {
     -webkit-box-sizing:border-box; /* Safari */}
 #selectedWork {
     color: grey;}
-#postTitle {
+#postListTitle {
     color: grey}
 
 @media (min-aspect-ratio: 1/1) {

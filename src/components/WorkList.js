@@ -17,7 +17,7 @@ class WorkList extends React.Component {
             <div className="is-parent column is-6" key={post.id}>
               <article>
                 <header>
-                  <p id="postTitle" className="post-meta">
+                  <p id="postListTitle" className="post-meta">
                     <Link
                       className="title has-text-primary is-size-4"
                       to={post.frontmatter.path}
