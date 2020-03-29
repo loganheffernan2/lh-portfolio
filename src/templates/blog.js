@@ -16,7 +16,8 @@ export default function Template({
         <span> — </span>
         <p>{frontmatter.date}</p>
         </p>
-        <div
+        <img id="postImage" src={frontmatter.image} alt=""/>
+        <div id="postDesc"
           className="blog-post-content"
           dangerouslySetInnerHTML={{ __html: html }}
         />
@@ -32,6 +33,8 @@ export const pageQuery = graphql`
         date(formatString: "YYYY")
         path
         title
+        image
+
       }
     }
   }
