@@ -1,6 +1,6 @@
 ---
 path: /whole-pratt-catalog
-date: 2020-03-29T00:55:56.113Z
+date: 2019-03-29T00:55:00.000Z
 title: Whole Pratt Catalog
 image: assets/wholeprattcatalog-desktop-logan-heffernan.jpg
 ---
